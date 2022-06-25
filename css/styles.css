@@ -59,7 +59,9 @@ header {
   font-family: 'Raleway', sans-serif;
 }
 
+/* ========================= */
 /* site nav */
+/* ========================= */
 
 .site-nav {
   display: flex;
@@ -93,7 +95,10 @@ header {
   text-decoration: none;
 }
 
+/* ========================= */
 /* auth-nav */
+/* ========================= */
+
 .auth-nav {
   display: flex;
   margin-left: auto;
@@ -106,8 +111,24 @@ header {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.nav-icon {
+  display: inline-block;
+  fill: currentColor;
+  margin-right: 10px;
 
+  align-items: center;
+  justify-content: center;
+}
+
+/* .icon-item {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+} */
+
+/* ========================= */
 /* main-nav */
+/* ========================= */
 
 .main-nav {
   margin-left: auto;
@@ -117,7 +138,26 @@ header {
   align-items: center;
 }
 
+/* ========================= */
 /* hero section */
+/* ========================= */
+
+.hero {
+  background-color: #2f303a;
+  max-width: 1600px;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .hero-title {
   color: var(--primary-white-color);
   font-weight: 900;
@@ -164,15 +204,6 @@ header {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.hero {
-  background-color: #2f303a;
-  max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 h2,
 li,
 h3,
@@ -181,7 +212,10 @@ p {
   margin-bottom: 0;
 }
 
+/* ========================= */
 /* переваги / feature-list */
+/* ========================= */
+
 .none {
   position: absolute;
   width: 1px;
@@ -204,9 +238,6 @@ p {
 
   display: block;
 }
-/* .work {
-  padding-bottom: 50px;
-} */
 
 .conteiner {
   max-width: 1200px;
@@ -239,11 +270,46 @@ p {
   line-height: 1.71;
 }
 
+.feature-item {
+  max-width: 270px;
+}
+
+.feature-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+
+  background-color: #fafafa;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin-bottom: 30px;
+}
+
+.icon-1::before {
+  background-image: url(../images/icon/antenna.svg);
+}
+
+.icon-2::before {
+  background-image: url(../images/icon/clock.svg);
+}
+
+.icon-3::before {
+  background-image: url(../images/icon/diagram.svg);
+}
+
+.icon-4::before {
+  background-image: url(../images/icon/astronaut.svg);
+}
+
 .feature-list .feature-item + .feature-item {
   margin-left: 50px;
 }
 
+/* ========================= */
 /* чим займаються */
+/* ========================= */
 
 .work-section {
   padding-top: 0;
@@ -257,7 +323,14 @@ p {
   margin-left: 30px;
 }
 
+/* ========================= */
 /* наша команда */
+/* ========================= */
+
+.team {
+  background: #f5f4fa;
+}
+
 .team-list {
   list-style: none;
   display: flex;
@@ -289,10 +362,6 @@ p {
   line-height: 1.18;
 }
 
-.team {
-  background: #f5f4fa;
-}
-
 .team-item img {
   margin-bottom: 0;
 }
@@ -305,9 +374,104 @@ p {
   padding: 30px 0;
   text-align: center;
 }
+.staff p {
+  margin-bottom: 16px;
+}
 
+.social {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  color: #afb1b8;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: #fff;
+  background-color: var(--accent-color);
+}
+
+.team-icon {
+  fill: currentColor;
+}
+
+/* .team-icon:hover,
+.team-icon:focus {
+} */
+
+/* ========================= */
+/* Постоянные клиенты */
+/* ========================= */
+.section-partners {
+}
+
+.partners {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.section-name {
+  margin-bottom: 50px;
+}
+.partner {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+}
+
+.icon-img {
+  display: flex;
+  justify-content: center;
+  color: #afb1b8;
+}
+.icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 106px;
+  max-height: 60px;
+  fill: currentColor;
+  margin-left: auto;
+  margin-right: auto;
+}
+.icon-img:hover,
+.icon-img:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.partner:hover,
+.partner:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+/* ========================= */
 /* підвал */
-
+/* ========================= */
 footer {
   background-color: #2f303a;
   font-family: inherit;
@@ -316,7 +480,13 @@ footer {
   padding-bottom: 0;
   padding-top: 60px;
   padding-bottom: 60px;
-  /* max-width: 1600px; */
+}
+.conteiner-footer {
+  align-items: baseline;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 70px;
 }
 
 .footer-nav {
@@ -366,8 +536,26 @@ footer {
 .add-maps:focus {
   color: var(--accent-color);
 }
+.footer-item h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 12px;
+}
+.footer-item .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
-/* -------------------------------------Портфолио--------- */
+.footer-item .social-link:hover,
+.footer-item .social-link:focus {
+  background-color: var(--accent-color);
+}
+
+/* ========================= */
+/* -------Портфолио--------- */
+/* ========================= */
 
 .samp-button {
   font-weight: 500;
@@ -406,6 +594,8 @@ footer {
 .samp-button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .pointer {
@@ -443,4 +633,9 @@ footer {
   display: flex;
   gap: 8px;
   justify-content: center;
+}
+.sample-item:hover,
+.sample-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
