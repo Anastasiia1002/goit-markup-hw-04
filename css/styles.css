@@ -301,7 +301,7 @@ p {
   display: block;
   height: 120px;
 
-  background-color: #fafafa;
+  background-color:  #F5F4FA;
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
@@ -330,7 +330,7 @@ p {
 }
 
 .feature-list .feature-item + .feature-item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 /* ========================= */
@@ -483,8 +483,7 @@ p {
   max-width: 106px;
   max-height: 60px;
   fill: currentColor;
-  margin-left: auto;
-  margin-right: auto;
+
 }
 .icon-img:hover,
 .icon-img:focus {
@@ -574,6 +573,7 @@ footer {
 }
 .footer-item .social-link {
   background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
 }
 
 .footer-item .social-link:hover,
