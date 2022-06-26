@@ -112,7 +112,6 @@ header {
   padding-bottom: 32px;
 }
 .nav-icon {
-
   fill: currentColor;
   margin-right: 10px;
 
@@ -120,20 +119,20 @@ header {
   justify-content: center; */
 }
 
-.contact-link{
-    display: flex;
+.contact-link {
+  display: flex;
   align-items: center;
 }
 /* .icon-item::before {
   content: '';
   display: block;
   /* height: 32px; */
-  /* color: currentColor;
+/* color: currentColor;
   background-repeat: no-repeat;
   background-position: center; */
 
-  /* margin-bottom: 30px; */
-}
+/* margin-bottom: 30px; */
+
 /* .icon-em::before {
   background-image: url('../images/icon/icons.svg#icon-email');
 }
@@ -301,7 +300,7 @@ p {
   display: block;
   height: 120px;
 
-  background-color:  #F5F4FA;
+  background-color: #f5f4fa;
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
@@ -462,14 +461,13 @@ p {
 .partner {
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .icon-img {
   display: flex;
   justify-content: center;
   color: #afb1b8;
-   border: 1px solid #afb1b8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
   height: 92px;
@@ -483,7 +481,6 @@ p {
   max-width: 106px;
   max-height: 60px;
   fill: currentColor;
-
 }
 .icon-img:hover,
 .icon-img:focus {
